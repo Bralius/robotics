@@ -283,7 +283,7 @@ public class FtcRobotControllerActivity extends Activity {
   @Override
   protected void onActivityResult(int request, int result, Intent intent) {
     if (request == REQUEST_CONFIG_WIFI_CHANNEL) {
-      if (result == RESULT_OK) {
+      if (result == RESULT_OK) { //changed <code></code>
         Toast toast = Toast.makeText(context, "Configuration Complete", Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         showToast(toast);
